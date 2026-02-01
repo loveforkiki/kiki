@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=".."
+    />
+    <meta name="keywords" content=".." />
+    <meta name="developre" content="rahulRPyadav" />
+    <title>Our Gallery</title>
+    <link rel="stylesheet" href="wildlife.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Critical CSS to ensure page displays while external resources load */
+      body {
+        background-color: #0c0c0c;
+        color: #ffffff;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+      }
+
+      .top-edge-animation {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background: linear-gradient(90deg, #3a7e3a, #ff9d00, #2c82c9, #3a7e3a);
+        background-size: 300% 100%;
+        z-index: 1000;
+        animation: gradientFlow 5s infinite linear;
+      }
+
+      @keyframes gradientFlow {
+        0% {
+          background-position: 0% 50%;
+        }
+        100% {
+          background-position: 300% 50%;
+        }
+      }
+
+      header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 80px;
+        background-color: rgba(26, 26, 26, 0.9);
+        z-index: 100;
+      }
+
+      .hero {
+        height: 100vh;
+        background-color: #1a1a1a;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 5%;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+      }
+
+      header button{
+        background: #ff9d00;
+        border: none;
+        padding: 3px 7px;
+        border-radius: 25%;
+        margin-left: 90px;
+      }
+      header button a{
+        text-decoration: none;
+        color: #0c0c0c;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Top Edge Animation -->
+    <div class="top-edge-animation"></div>
+
+    <!-- Header Navigation -->
+    <header>
+      <div class="logo">
+        <span>Our Gallery</span>
+      </div>
+      <button><a href="index.html">Go Back</a></button>
+      <div class="navigation__group">
+        <img class="profile" src="Images/profile.png" alt="Profile Picture" />
+      </div>
+    </header>
+
+    <!-- Profile Dropdown -->
+
+    <main>
+      <!-- Hero Section -->
+      <div class="hero">
+        <h1 class="animate-title">WELCOME TO <span>Our Gallery KIKI</span></h1>
+        <h4 class="animate-subtitle">
+          “In every picture, your smile stays, Turning ordinary moments into
+          forever days.”
+        </h4>
+        <div class="scroll-indicator">
+          <span>Scroll Down</span>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+      </div>
+
+      <!-- Introduction Section -->
+      <div class="story">
+        <p>
+          “Kiki, yeh gallery sirf tasveeron ka safar nahi, yeh un palon ki
+          kahani hai jo chupchaap dil mein bas gaye. Har frame mein aap ki
+          muskurahat ka nishaan hai, har yaad mein ek sukoon sa mehsoos hota
+          hai. Waqt ke saath sab kuch badla, par kuch ehsaas wahi rahe — jaise
+          aap .”
+        </p>
+      </div>
+
+      <!-- Featured Animals Grid -->
+      <div class="section-title">
+        <h2>Most Loving Picture</h2>
+      </div>
+      <div class="grid-container">
+        <div class="grid-item">
+          <div class="image-container my-kiki-img">
+            <img src="Images/kiki-f1.jpeg" alt="Elephant" />
+          </div>
+          <h3>My Kiki</h3>
+          <p>
+            “es tasveer mein sirf app nahi ho, is tasveer se meri kahani shuru
+            hoti hai. Yahin se har khwaab ne ek chehra paaya, aur har dua ne app
+            ko chun liya.. I Love You Kiki.”
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="image-container my-kiki-img">
+            <img src="Images/My-Kiki.jpeg" alt="Dolphin" />
+          </div>
+          <h3>My Parle-G</h3>
+          <p>
+            “Kiki, jab main yeh tasveer dekhta hoon, toh sirf pal nahi dikhta,
+            aap dikhti ho. Aur sach kahun… aap ko dekh kar sab kuch theek lagne
+            lagta hai...... I Love You Kiki .”
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="image-container">
+            <img src="Images/kiki-pink1.jpeg" alt="Lion" />
+          </div>
+          <h3>My Maggi</h3>
+          <p>
+            “Kiki, is pink dress mein app dekh kar mujhe yeh ehsaas hua, kuch
+            pal sirf khoobsurat nahi hote, woh zindagi ka hissa ban jaate hain.”
+          </p>
+        </div>
+        <div class="grid-item">
+          <div class="image-container my-kiki-img">
+            <img src="Images/kiki-w.jpeg" alt="Penguin" />
+          </div>
+          <h3>My Penguin</h3>
+          <p>
+            “Kiki, jab maine aap ko bindi mein dekha, toh laga jaise kuch kehna
+            baaki hi nahi raha. Us pal aap sirf khoobsurat hi nahi  muje speachless bana diya, aap wahi
+            the jiska intezaar dil ne chupchaap kiya tha. 
+            I Love You My Kiki”
+          </p>
+        </div>
+      </div>
+
+      <!-- Animal Spotlight Sections -->
+      <div class="section-title">
+        <h2>Our Spotlights</h2>
+      </div>
+      <div class="spotlight-container">
+        <div class="content-block sparrow">
+          <div class="content-overlay">
+            <h1>KIKI</h1>
+            <p>
+              “In this picture, it’s both of us,
+and for a moment, everything feels right.
+No sadness, no noise,
+just you and me… sharing a quiet smile.”
+            </p>
+          </div>
+        </div>
+
+        <div class="content-block dog">
+          <div class="content-overlay">
+            <h1>LOVE</h1>
+            <p>
+             “This wasn’t planned,
+but somehow it became a moment.
+Because when you’re there,
+even ordinary frames feel special.”
+            </p>
+          </div>
+        </div>
+
+        <div class="content-block cat">
+          <div class="content-overlay">
+            <h1>FOREVER</h1>
+            <p>
+              “The story didn’t pause here,
+it quietly moved forward.
+With you in the frame,
+every step felt right.”
+            </p>
+          </div>
+        </div>
+
+        <div class="content-block horse">
+          <div class="content-overlay">
+            <h1>WITH YOU</h1>
+            <p>
+              “It was just another moment,
+until it became ours.
+Somewhere between that smile and the silence,
+Kiki quietly stayed with me.”
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Additional Animals -->
+      <div class="section-title">
+        <h2>My Spotlights</h2>
+      </div>
+      <div class="container wildlife-cards">
+        <div>
+          <div class="image-container">
+            <img
+              style="width: 100%; height: 100%"
+              src="main-img/5.jpg"
+              alt="Frog"
+            />
+          </div>
+          <h3>Aaru</h3>
+          <p>
+           __________________________________
+           ________________________________________
+          </p>
+        </div>
+        <div>
+          <div class="image-container">
+            <img
+              style="width: 100%; height: 100%"
+              src="main-img/2.jpg"
+              alt="Ant"
+            />
+          </div>
+          <h3>Aaru</h3>
+          <p>
+            ______________________________________________
+            _______________________________________________
+            ____________________
+          </p>
+        </div>
+        <div>
+          <div class="image-container">
+            <img
+              style="width: 100%; height: 100%"
+              src="main-img/6.jpg"
+              alt="Snake"
+            />
+          </div>
+          <h3>Aaru</h3>
+          <p>
+            ________________________________________
+            ______________________________________________
+            ________________________________________________
+          </p>
+        </div>
+      </div>
+
+     
+      <!-- Footer -->
+      <footer>
+        <div class="footer-container">
+          <div class="footer-section">
+            <h3>About Us</h3>
+            <p>
+             “Hum dono alag-alag the,
+par jab saath hoye, toh hamari zindagi khoobsurat ban gayi.”
+            </p>
+          </div>
+          
+          
+          
+        <div class="footer-bottom">
+          <p>&copy; 2026 Our Gallery. All rights reserved.</p>
+          <b>Rahul RP Yadav</b>
+        </div>
+      </footer>
+    </main>
+
+    <!-- Custom Script - Place at the end to ensure DOM is loaded -->
+    <script src="script.js"></script>
+  </body>
+</html>
