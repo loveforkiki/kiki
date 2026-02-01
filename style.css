@@ -1,0 +1,286 @@
+
+body{
+    /* background-image: url(./main-img/background.jpg); */
+    background-color:var(--red-deep);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+:root {
+  --red-deep: #2b0d3e;      /* Dark wine red */
+  --red-primary: #7a3f91;  /* Main strong red */
+  --red-soft: #c59dd9;     /* Soft rose red */
+  --beige-light: #f2eaf7;  /* Soft cream/beige */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: var(--red-primary);
+  box-shadow:  0 0 5px 2px  #f2eaf7 ;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 50px;
+  height: 50px;
+  
+   border-radius: 50%;
+  background-image: url(main-img/kiki.jpeg);
+       background-position: 63px 172px;
+    background-size: 65px 91px;
+     box-shadow: 2px 0 5px 5px var(--red-deep);
+  
+ 
+}
+.logo img{
+  width: 100%;
+  height: 100%;
+   border-radius: 50%;
+  
+   
+}
+.logo-text{
+  font-size: 25px;
+  color: var(--beige-light);
+}
+
+.menu-btn {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--red-deep);
+  /* background-image: url(Images/kiki.jpeg); */
+  color: #fff;
+  transition: right 0.5s ease;
+  padding: 1.5rem;
+  z-index: 9999;
+}
+
+.mobile-menu.active {
+  right: 0;
+}
+
+.close-btn {
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 3rem;
+  margin-top: -20px;
+}
+
+.mobile-menu li {
+  margin: 1.5rem 0;
+  font-size: 30px;
+  background-color:var( --red-soft);
+  padding: 5px;
+  width: 170px;
+  text-align: center;
+  border-radius: 9px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  /* color: #fff; */
+  color: black;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mobile-menu li:hover{
+  background-color: var(--beige-light);
+  transition: .3s ease;
+  transform: scale(1.2);
+}
+/* Hero Section Start here ........................... */
+
+
+
+.main{
+  position: absolute;
+  top: 100px;
+}
+.hero{
+    width: 100%;
+}
+
+.section-1{
+   text-transform: uppercase;
+  font-size: 15px;
+  color: whitesmoke;
+  text-align: center;
+
+}
+.hero h1{
+  text-transform: uppercase;
+  font-size: 30px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.section-2{
+  width: 400px;
+  text-align: center;
+  margin: auto;
+}
+
+
+
+
+
+.love-note{
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: whitesmoke;
+}
+.msg{
+ 
+  /* background-image: url(main-img/Blur_you-me.jpeg); */
+  background-color: var(--red-primary);
+  background-position: center;
+  background-size: cover;
+  border: transparent;
+  border-radius: 20px 30px 10px 20px;
+  margin-left: 18px;
+ 
+  
+}
+
+.msg-info{
+   font-size: 22px;
+  text-align: start;
+  /* color: rgb(178, 155, 155); */
+  color: whitesmoke;
+  padding: 5px;
+  padding-left: 10px;
+  font-weight: 700;
+   position: relative;
+ 
+  
+}
+
+.section-2 .time{
+  font-size: 14px;
+  width: 120px;
+  background-color: var(--red-primary);
+  position: absolute;
+  right: 2px;
+  top: -15px;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  border-radius: 0px 10px 10px 0px;
+  
+}
+
+
+/* Form */
+
+.contact{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+form {
+  /* background-image: url(Images/kiki.jpeg); */
+  /* background-image: url(main-img/Love\ Backgrounds\ Wallpapers\ Heart.jpg); */
+  background-color: var(--red-primary);
+  background-position: center;
+  background-size: cover;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin-left: 19px;
+}
+
+/* Input fields */
+.field,
+.message {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+
+.field i,
+.message i {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  color: #333;
+  font-size: 1rem;
+}
+
+.message i {
+  top: 20px;
+  transform: none;
+}
+
+/* Inputs & textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 12px 12px 44px;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #333;
+  outline: none;
+  background: var(--beige-light);
+}
+
+textarea {
+  min-height: 120px;
+  resize: none;
+  padding-top: 14px;
+}
+
+/* Focus */
+input:focus,
+textarea:focus {
+  border: 2px solid #7303a7;
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  background: var(--red-soft);
+  color: #000;
+  font-family: "Nunito", sans-serif;
+  box-shadow: 0 5px 10px var(--beige-light);
+  transition: background 0.3s ease;
+}
