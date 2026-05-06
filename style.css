@@ -11,10 +11,10 @@ body{
 }
 
 :root {
-  --red-deep: #ffc176;      /* Dark wine red */
-  --red-primary: #ffdc74;  /* Main strong red */
-  --red-soft: #ffe9b3;     /* Soft rose red */
-  --beige-light: #d7dace;  /* Soft cream/beige */
+  --red-deep: #3c1518;      /* Dark wine red */
+  --red-primary: #69140e;  /* Main strong red */
+  --red-soft: #a44200;     /* Soft rose red */
+  --beige-light: #d58936;  /* Soft cream/beige */
 }
 
 /* Navbar */
