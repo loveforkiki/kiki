@@ -11,8 +11,8 @@ body{
 }
 
 :root {
-  --red-deep: #3c1518;      /* Dark wine red */
-  --red-primary: #69140e;  /* Main strong red */
+  --red-deep: #741A2F;      /* Dark wine red */
+  --red-primary: #FFC6A8;  /* Main strong red */
   --red-soft: #a44200;     /* Soft rose red */
   --beige-light: #d58936;  /* Soft cream/beige */
 }
