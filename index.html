@@ -40,10 +40,10 @@
 <!-- Hero Section Start here ........................... -->
     <div class="main">
       <div class="hero">
-        <h1>hi kiki</h1>
+        <h1>Hi KIKI</h1>
       </div>
       <div class="section-1 ">
-        <h2>WE WILL together ONE DAY</h2>
+        <h2>We Will together One Day</h2>
       </div>
 
       <div class="section-2">
@@ -97,18 +97,16 @@
            </div>
 
 
-            <div style="weight:400px; height:350px; margin:50px; ">
-       <img height="100%" wight="100%" src="kiki-img.jpg">
-     </div> 
-           
-           
-     <div style="weight:400px; height:350px; margin:50px; ">
-       <img height="100%" wight="100%" src="pass.jpg">
-     </div>
-          <div style="width:400px; height:350px; margin:5px;">
-    <video width="100%" height="100%" controls>
+           <div class="image-container">
+    <img src="kiki-img.jpg" alt="">
+</div>
+
+<div class="image-container">
+    <img src="pass.jpg" alt="">
+</div>
+          <div class="video-container">
+    <video controls>
         <source src="vn_video.mp4" type="video/mp4">
-      
     </video>
 </div>
        </div>
@@ -126,7 +124,7 @@
         >
           <div class="field">
             <i class="fas fa-user"></i>
-            <input type="text" name="data[Name]" placeholder="Name" />
+            <input type="text" name="data[Name]" placeholder="Name" />  
           </div>
 
           <div class="field">
@@ -158,26 +156,57 @@
       </section>
       <!-- contact section ends -->
 
-
+      <div>
+ <img src="Images/s1.png" class="sticker sticker1">
+<img src="Images/s2.png" class="sticker sticker2">
+<img src="Images/s3.png" class="sticker sticker3">
+<img src="Images/s4.png" class="sticker sticker4">
+<img src="Images/s5.png" class="sticker sticker5">
+<img src="Images/s6.png" class="sticker sticker6">
+<img src="Images/s7.png" class="sticker sticker7">
+<img src="Images/s8.png" class="sticker sticker8">
+<img src="Images/s9.png" class="sticker sticker9">
+<img src="Images/s10.png" class="sticker sticker10">
+      </div>
 
 
     </div>
 
 
 
-    <script>
-      const menuOpen = document.getElementById("menuOpen");
+<script>
+const menuOpen = document.getElementById("menuOpen");
 const menuClose = document.getElementById("menuClose");
 const mobileMenu = document.getElementById("mobileMenu");
 
 menuOpen.addEventListener("click", () => {
-  mobileMenu.classList.add("active");
+
+    // Hearts Animation
+    for(let i = 0; i < 25; i++){
+        let heart = document.createElement("div");
+       heart.innerHTML = ["❤️","💖","💕","✨","🌸"][Math.floor(Math.random()*5)];
+        heart.classList.add("heart");
+
+        heart.style.left = Math.random() * window.innerWidth + "px";
+        heart.style.animationDuration = (Math.random() * 2 + 2) + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+            heart.remove();
+        }, 4000);
+    }
+
+    // 0.5 second baad menu open hoga
+    setTimeout(() => {
+        mobileMenu.classList.add("active");
+    }, 500);
+
 });
 
 menuClose.addEventListener("click", () => {
-  mobileMenu.classList.remove("active");
+    mobileMenu.classList.remove("active");
 });
-
-    </script>
+</script>
   </body>
 </html>
