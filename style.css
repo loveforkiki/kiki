@@ -316,3 +316,13 @@ textarea{
         transform: translateY(-15px) rotate(5deg);
     }
 }
+
+
+.insta {
+   background: var(--red-deep);
+   padding: 5px 10px;
+   border-radius: 25px;
+}
+.insta a{
+    text-decoration: none;
+}
