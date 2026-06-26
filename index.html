@@ -1,208 +1,253 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>       
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>LOVE FOR KIKI</title>
-  </head>
-  <body>
-    
-<header class="navbar">
-    <div class="logo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="preloader" id="preloader">
+    <div class="preloader-content">
+        <div class="glowing-heart">💖</div>
+        <p class="preloader-text">Creating love experience for My Kiki...</p>
     </div>
-    <div class="logo-text">We Will Together
-    </div>
-
-    <!-- Hamburger -->
-    <button class="menu-btn" id="menuOpen" aria-label="Open menu">
-      ☰
-    </button>
-  </header>
-
-  <!-- Mobile Menu -->
- 
-    <nav class="mobile-menu" id="mobileMenu">
-    <button class="close-btn" id="menuClose" aria-label="Close menu">
-      ✕
-    </button>
-
-    <ul>
-      <li><a href="home.html">Our Gallery</a></li>
-      <li><a href="more-pictures.html">More Pictures</a></li>
-      <li><a href="i-love-you.html">I Love You</a></li>
-      <li><a href="image-slider.html">Image Slider</a></li>
-      <li><a href="auto-slider.html">Auto Slider</a></li>
-      <li><a href="rose.html">Something</a></li>
-    </ul>
-  </nav>
-
+</div>
   
-<!-- Hero Section Start here ........................... -->
-    <div class="main">
-      <div class="hero">
-        <h1>Hi KIKI</h1>
-      </div>
-      <div class="section-1 ">
-        <h2>We Will together One Day</h2>
-      </div>
 
-      <div class="section-2">
-        
-   
-       <div class="love-note">
-         <h2 style="display: block ;"> I love you my kiki 💕</h2>
-         <h2 style="display: block;"> I miss you kiki 💞<h2>
-       </div>
-       
-        <div style="margin-bottom:30px;"  class="msg">
-         
-        <div class="msg-info"> 
-           <div style="display: flex; align-items: center; justify-content: space-between;">
-            <div class="time">
-          <span> June 25 | 16:48pm</span>
+    <section class="welcome" id="welcome">
+        <div class="welcome-content">
+            <h1>❤️</h1>
+            <h2>Hi Kiki</h2>
+            <p>I made this little place to keep our beautiful memories together.</p>
+            <input type="password" id="password" placeholder="Enter our secret password ❤️">
+            <p class="error" id="error">Wrong Password 😢</p>
+            <button id="openGallery">Open Our Memories ❤️</button>
         </div>
-           <div class="insta">
-          <a href="./Our-insatgram/index.html"><span> click Here</span></a>
+    </section>
+
+    <div class="hearts" id="hearts"></div>
+
+    <div class="container">
+        <div class="relationship-counter">
+            <h3>Days of Togetherness 💞</h3>
+            <div id="together-timer">Calculating our love...</div>
         </div>
-           </div>
-          <p>
-          Hi kiki. Barish aa rahi hai abhi.
-            or Batao kaisa ha mera maggi don.
-            i love you 💗 
-          
-          
-        
+
+        <h1>❤️ Our Memories</h1>
+        <p>Every photo is a beautiful chapter of our journey together.</p>
+        <div class="gallery" id="gallery"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="close">&times;</span>
+        <span class="counter" id="counter"></span>
+        <img id="lightbox-img" alt="Memory">
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+<!-- ==========================================
+     NEW FEATURES: LOVE LETTER & REASONS SECTION
+=========================================== -->
+<div class="container unique-sections">
+    <hr class="section-divider">
+
+    <!-- Reasons Why I Love You Section -->
+    <div class="reasons-section">
+        <h2>Reasons Why I Love You ✨</h2>
+        <p>Just a few reminders of why you are my whole world.
+            <br>tap on it
         </p>
-       </div>
-        </div>        
-           <div class="msg">
-         
-        <div class="msg-info"> 
-           <div class="time">
-          <span> June 25 | 16:54pm
-        </div><p>
-         please jaldii se jaipur aa jao.
-          bahut Miss karta hu aap ko kiki 🥺.
-          
-       
-          
-          
-        </p>
-       </div>
-           </div>
+        <div class="reasons-grid">
+            <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                <div class="reason-front">Reason #1 ❤️</div>
+                <div class="reason-back">You are my Kiki. 😊</div>
+            </div>
+            <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                <div class="reason-front">Reason #2 🌸</div>
+                <div class="reason-back">You are my Maggi Don 🥺</div>
+            </div>
+            <div class="reason-card" onclick="this.classList.toggle('flipped')">
+                <div class="reason-front">Reason #3 ✨</div>
+                <div class="reason-back">I am your Kaanu ♾️</div>
+            </div>
+        </div>
+    </div>
 
-
-           <div class="image-container">
-    <img src="kiki-img.jpg" alt="">
+    <!-- Virtual Love Letter Section -->
+    <div class="letter-section">
+        <h2>A Little Note For You 💌</h2>
+        <div class="envelope-wrapper" id="envelope-wrapper">
+            <div class="envelope" id="envelope">
+                <div class="flap"></div>
+                <div class="pocket"></div>
+                <div class="letter">
+                    <div class="letter-text">
+                        <strong>Dearest Monika,</strong><br><br>
+                        This space is just a tiny reflection of how much you mean to me. Every moment with you is a memory I treasure forever. Thank you for being my constant support, my laughter, and my love. <br><br>
+                        Forever & Always, <br>
+                        ❤️
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="open-letter-btn">Open My Letter 💌</button>
+    </div>
 </div>
 
-<div class="image-container">
-    <img src="pass.jpg" alt="">
-</div>
-          <div class="video-container">
-    <video controls>
-        <source src="vn_video.mp4" type="video/mp4">
-    </video>
-</div>
-       </div>
-      <!-- Hero Section Ends.................................. -->
 
-     
+<!-- ==========================================
+         ROMANTIC BONUS SECTIONS
+    =========================================== -->
+    <hr class="section-divider">
 
-      <!-- contact section starts -->
-      <section class="contact" id="contact">
+    <!-- 1. LOVE METER QUIZ SECTION -->
+    <div class="container quiz-section">
+        <h2>The Ultimate Love Quiz 👑</h2>
+        <p>Let's see how well you remember our beautiful moments!</p>
         
-        <form
-          id="contact-form"
-          action="https://sheetdb.io/api/v1/shiyodlo4fuy7"
-          method="post"
-        >
-          <div class="field">
-            <i class="fas fa-user"></i>
-            <input type="text" name="data[Name]" placeholder="Name" />  
-          </div>
+        <div class="quiz-container" id="quiz-box">
+            <div class="quiz-header">
+                <span id="question-number">Question 1 of 3</span>
+            </div>
+            <div class="quiz-question" id="quiz-question">Hum pehli baar kaha mile the? 🤔</div>
+            <div class="quiz-options" id="quiz-options">
+                <!-- Options dynamically injected by JS -->
+            </div>
+        </div>
+        <!-- Secret Surprise After Quiz Completion -->
+        <div class="quiz-surprise hide-surprise" id="quiz-surprise">
+            <h2>🎉 Correct! You passed the test! ❤️</h2>
+            <p>Mene kaha tha na, you are my absolute favorite person. I love you to the moon and back! ♾️✨</p>
+            <div class="sparkles">✨💖✨</div>
+        </div>
+    </div>
 
-          <div class="field">
-            <i class="fas fa-envelope"></i>
-            <input type="text" name="data[Email]" placeholder="How Much You Love Me ?" />
-          </div>
+    <hr class="section-divider">
 
-          <div class="field">
-            <i class="fas fa-phone-alt"></>
-            <input type="text" name="data[Number]" placeholder="How Much You Miss Me ?" />
-          </div>
+    <!-- 2 & 3. BUCKET LIST & VIRTUAL HUGS GRID -->
+    <div class="container interactive-fun-section">
+        <!-- Virtual Treats / Hugs Section -->
+        <div class="virtual-treats">
+            <h2>Need a Smile? 😊</h2>
+            <p>Click these whenever you miss me or need a little warmth.</p>
+            <div class="treat-buttons">
+                <button class="treat-btn" onclick="sendVirtualTreat('hug')">Click for a Virtual Hug 🫂</button>
+                <button class="treat-btn" onclick="sendVirtualTreat('kiss')">Click for a Virtual Kiss 💋</button>
+            </div>
+        </div>
 
-          <div class="message">
-            <i class="fas fa-comment-dots"></i>
-            <textarea
-              name="data[Message]"
-              placeholder="Message for Me Kiki.........."
-              required
-            ></textarea>
-          </div>
+        <!-- Our Future Bucket List -->
+        <!-- <div class="bucket-list-section">
+            <h2>Our Future Bucket List ✈️🌍</h2>
+            <p>Things we promise to do together in this beautiful journey.</p>
+            <ul class="bucket-list">
+                <li><input type="checkbox" id="task1"> <label for="task1">Late night drive with absolute silence & hand-holding. 🚗</label></li>
+                <li><input type="checkbox" id="task2"> <label for="task2">Watch a beautiful sunset from the mountain top. ⛰️🌅</label></li>
+                <li><input type="checkbox" id="task3"> <label for="task3">Cook a chaotic, messy dinner together. 🍳🍕</label></li>
+                <li><input type="checkbox" id="task4"> <label for="task4">A cozy movie marathon under a huge warm blanket. 🍿🎬</label></li>
+            </ul>
+        </div> -->
+    </div>
 
-          <button type="submit" class="btn btn-animation">
-            Send to your Aaru<i class="fas fa-paper-plane"></i>
-          </button>
-        </form>
-       
-      
+    <!-- Dynamic Pop-up Overlay for Treats -->
+    <div class="treat-overlay" id="treat-overlay">
+        <div class="treat-popup">
+            <span class="close-treat" onclick="closeTreat()">&times;</span>
+            <div id="treat-content" class="treat-content"></div>
+        </div>
+    </div>
 
-      </section>
-      <!-- contact section ends -->
+    <hr class="section-divider">
 
-      <div>
- <img src="Images/s1.png" class="sticker sticker1">
-<img src="Images/s2.png" class="sticker sticker2">
-<img src="Images/s3.png" class="sticker sticker3">
-<img src="Images/s4.png" class="sticker sticker4">
-<img src="Images/s5.png" class="sticker sticker5">
-<img src="Images/s6.png" class="sticker sticker6">
-<img src="Images/s7.png" class="sticker sticker7">
-<img src="Images/s8.png" class="sticker sticker8">
-<img src="Images/s9.png" class="sticker sticker9">
-<img src="Images/s10.png" class="sticker sticker10">
-      </div>
+    <div class="container scratch-section">
+        <h2>Scratch For A Surprise! 🎁</h2>
+        <p>Use your finger or mouse to scratch the card and unlock your special voucher.</p>
+        
+        <div class="scratch-card-wrapper">
+            <div class="scratch-card-reward">
+                <h3>🎫 SPECIAL VOUCHER</h3>
+                <p>This voucher entitles Monika to <strong>One Infinite Hug & A Late-Night Ice Cream Date</strong> anytime she wants! ❤️</p>
+            </div>
+            <canvas id="scratch-canvas" width="300" height="150"></canvas>
+        </div>
+    </div>
+
+    <div class="toast-container" id="toast-container"></div>
+
+    <div class="visualizer-container">
+        <canvas id="visualizer-canvas"></canvas>
+    </div>
+
+    <!-- ==========================================
+         FINAL BONUS: LOVE JAR & STARFIELD
+    =========================================== -->
+    <hr class="section-divider">
+
+    <!-- Virtual Love Jar Container -->
+    <div class="container jar-section">
+        <h2>Our Virtual Love Jar 🫙💖</h2>
+        <p>Tap the magic jar whenever you need a reminder of how much I adore you. Every tap brings a new sweet note!</p>
+        
+        <div class="jar-container">
+            <div class="love-jar" id="love-jar">
+                <div class="jar-lid"></div>
+                <div class="jar-body">
+                    <span class="jar-heart">💝</span>
+                </div>
+            </div>
+            
+            <div class="jar-message-box" id="jar-message-box">
+                Tap the jar to draw a love note... ✨
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Twinkling Stars Canvas for Night Mode -->
+    <div class="starfield-container">
+        <canvas id="starfield-canvas"></canvas>
+    </div>
 
 
+<hr class="section-divider">
+
+    <div class="container interactive-love-center">
+        <h2>Virtual Distance? No Problem! 🫂</h2>
+        <p>Send me a virtual hug or kiss whenever you miss me. Let's see how many we can collect!</p>
+        
+        <div class="hug-counter-box">
+            <button class="hug-btn" id="send-hug-btn">Send a Hug ❤️</button>
+            <div class="counter-display">Hugs Collected: <span id="hug-count">0</span></div>
+        </div>
+    </div>
+
+    <div class="secret-letter-overlay" id="secret-overlay">
+        <div class="secret-letter-card">
+            <span class="close-letter-btn" id="close-letter-btn">❌</span>
+            <h2>My Secret Note To You 💌</h2>
+            <div class="letter-content">
+                <p>Hey Monika,</p>
+                <p>If you are reading this, it means you typed my name on the keyboard! You always find a way to unlock my hidden thoughts.</p>
+                <p>I just want to say that you make my life incredibly beautiful. Every single day, every laugh, and every memory we share means the world to me. Thank you for being mine forever. ❤️</p>
+                <p class="letter-signature">~ Always Yours, Aaru</p>
+            </div>
+        </div>
     </div>
 
 
 
-<script>
-const menuOpen = document.getElementById("menuOpen");
-const menuClose = document.getElementById("menuClose");
-const mobileMenu = document.getElementById("mobileMenu");
 
-menuOpen.addEventListener("click", () => {
 
-    // Hearts Animation
-    for(let i = 0; i < 25; i++){
-        let heart = document.createElement("div");
-       heart.innerHTML = ["❤️","💖","💕","✨","🌸"][Math.floor(Math.random()*5)];
-        heart.classList.add("heart");
 
-        heart.style.left = Math.random() * window.innerWidth + "px";
-        heart.style.animationDuration = (Math.random() * 2 + 2) + "s";
 
-        document.body.appendChild(heart);
 
-        setTimeout(() => {
-            heart.remove();
-        }, 4000);
-    }
 
-    // 0.5 second baad menu open hoga
-    setTimeout(() => {
-        mobileMenu.classList.add("active");
-    }, 500);
 
-});
 
-menuClose.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-});
-</script>
-  </body>
+    <!-- <audio id="bg-music" src="Images/dil-aaya.mp3" loop></audio> -->
+
+    <script src="script.js"></script>
+</body>
 </html>
